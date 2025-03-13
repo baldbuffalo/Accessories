@@ -3,24 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sample Page</title>
+    <title>Smart Mac Adapter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
         }
-        h1 {
-            color: #333;
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
         }
-        p {
-            color: #555;
+        .container {
+            padding: 20px;
+        }
+        .product-image {
+            width: 50%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .btn {
+            background-color: #007aff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #005bb5;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple HTML page.</p>
-    <a href="https://example.com">Visit Example</a>
+
+    <header>Smart Mac Adapter</header>
+
+    <div class="container">
+        <h2>Auto-Detecting Multi-Port Hub for Mac</h2>
+        <p>Introducing the most advanced Mac adapter that automatically powers ports on and off based on usage.</p>
+        <img src="adapter.jpg" alt="Mac Adapter" class="product-image">
+        <h3>Features:</h3>
+        <ul>
+            <li>✔️ Multiple Ports (USB-C, USB-A, HDMI, Ethernet, SD Card)</li>
+            <li>✔️ Auto Power Control – Saves energy when not in use</li>
+            <li>✔️ MacBook Optimized – Works with M1/M2 models</li>
+            <li>✔️ Fast Charging – PD support for MacBooks</li>
+        </ul>
+        <a href="https://yourstore.com" class="btn">Buy Now</a>
+    </div>
+
 </body>
 </html>
