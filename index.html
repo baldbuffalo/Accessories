@@ -8,26 +8,46 @@
 </head>
 <body>
 
-  <h1>NextGen Adapter</h1>
+  <h1 id="logo">NextGen Adapter</h1>
   <p>One adapter to connect them all. Clean, universal, and made for the future. Shipping worldwide soon.</p>
   
-  <!-- You'll replace this button's link later -->
   <button class="buy-button" disabled>Buy Now (Coming Soon)</button>
-
-  <!-- Optional notify form (hidden or uncomment when ready)
-  <form action="https://formspree.io/f/your-id" method="POST">
-    <input type="email" name="email" placeholder="Get notified..." required>
-    <button type="submit">Notify Me</button>
-  </form>
-  -->
 
   <div class="footer">
     &copy; 2025 NextGen Adapter. All rights reserved.
   </div>
 
-  <!-- TODO: Add product image when prototype is ready -->
-  <!-- TODO: Replace Buy button with Payoneer link once account is live -->
-  <!-- TODO: Add specs or supported devices section -->
+  <!-- Easter Egg Scripts -->
+  <script>
+    // Konami Code Easter Egg
+    const secret = [
+      "ArrowUp","ArrowUp","ArrowDown","ArrowDown",
+      "ArrowLeft","ArrowRight","ArrowLeft","ArrowRight",
+      "b","a"
+    ];
+    let input = [];
+
+    window.addEventListener("keydown", (e) => {
+      input.push(e.key);
+      input = input.slice(-secret.length);
+      if (input.join("") === secret.join("")) {
+        alert("🎉 You found the secret! You're awesome.");
+      }
+    });
+
+    // Click Logo 5 Times Easter Egg
+    let clicks = 0;
+    const logo = document.getElementById("logo");
+
+    logo.addEventListener("click", () => {
+      clicks++;
+      if (clicks === 5) {
+        logo.classList.toggle("glow");
+        alert("✨ Glow mode unlocked!");
+        clicks = 0;
+      }
+    });
+  </script>
 
 </body>
 </html>
